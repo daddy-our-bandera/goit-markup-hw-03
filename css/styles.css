@@ -83,10 +83,12 @@ img {
 }
 
 /* HEADER */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 /* logo */
 .web {
@@ -115,16 +117,14 @@ img {
   display: flex;
   gap: 50px;
 }
-.header-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+
 .contact-list {
   gap: 50px;
   display: flex;
 }
 
 .header-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -134,6 +134,7 @@ img {
   letter-spacing: 0.02em;
 }
 .header-contact {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -155,19 +156,20 @@ img {
 }
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--dark-bg-cl);
 }
 .hero-container {
-  height: 600px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 195px;
+  text-align: center;
 }
 .hero-tittle {
   margin-bottom: 30px;
   text-align: center;
   width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -203,9 +205,7 @@ img {
   border-radius: 4px;
 }
 /* Peculiarities */
-.features-container {
-  height: 284px;
-}
+
 .features-list {
   display: flex;
   gap: 30px;
@@ -228,6 +228,10 @@ img {
   color: var(--secondary-txt-color);
 }
 /* occupations */
+.caption {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
 .occupations-list {
   gap: 30px;
   display: flex;
@@ -268,15 +272,18 @@ img {
   color: var(--secondary-txt-color);
 }
 /* footer */
-.footer-container {
-  height: 252px;
+.footer {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 64px;
 }
+
 .footer {
   background-color: var(--dark-bg-cl);
 }
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -285,9 +292,6 @@ img {
 }
 .address {
   font-style: normal;
-}
-.address-list {
-  margin-top: 20px;
 }
 
 .address-item {
@@ -348,16 +352,14 @@ img {
   background-color: var(--btn-focus-bg-cl);
 }
 /* portfolio projects */
-.main-nav-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .main-nav-list {
-  gap: 9px;
+  justify-content: center;
+
   display: flex;
   padding-bottom: 16px;
   margin-bottom: 34px;
+  margin-bottom: 50px;
+  gap: 9px;
 }
 
 .portfolio-list {
